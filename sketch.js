@@ -36,7 +36,7 @@ function preload(){
 function setup() {
   createCanvas(600, 200);
   
-  trex = createSprite(50,180,20,50);
+  trex = createSprite(300,180,20,50);
   
   trex.addAnimation("running", trex_running);
   trex.addAnimation("collided", trex_collided);
@@ -44,7 +44,7 @@ function setup() {
   
   ground = createSprite(200,180,400,20);
   ground.addImage("ground",groundImage);
-  ground.x = ground.width /2;
+  ground.x = ground.width/2;
   ground.velocityX = -(6 + 3*score/100);
   
   gameOver = createSprite(300,100);
